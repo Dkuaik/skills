@@ -1,0 +1,31 @@
+# Production override - use with: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+services:
+  app:
+    build:
+      target: base
+      args:
+        - BUILD_ENV=production
+    environment:
+      - DEBUG=false
+      - LOG_LEVEL=info
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

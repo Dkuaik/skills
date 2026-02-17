@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PROJECT_NAME=${PROJECT_NAME:-fastapi-app}
+      - VERSION=${VERSION:-0.1.0}
+      - DEBUG=${DEBUG:-false}
+    restart: unless-stopped
