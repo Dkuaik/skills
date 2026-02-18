@@ -60,26 +60,6 @@ Reusable patterns for common technologies:
 | `ai-sdk-5` | Vercel AI SDK patterns |
 | `conventional-commits` | Conventional Commits standard with types, scopes, breaking changes |
 
-### Prowler-Specific Skills
-
-Patterns tailored for Prowler development:
-
-| Skill | Description |
-|-------|-------------|
-| `prowler` | Project overview, component navigation |
-| `prowler-api` | Django + RLS + JSON:API patterns |
-| `prowler-ui` | Next.js + shadcn conventions |
-| `prowler-sdk-check` | Create new security checks |
-| `prowler-mcp` | MCP server tools and models |
-| `prowler-test-sdk` | SDK testing (pytest + moto) |
-| `prowler-test-api` | API testing (pytest-django + RLS) |
-| `prowler-test-ui` | E2E testing (Playwright) |
-| `prowler-compliance` | Compliance framework structure |
-| `prowler-provider` | Add new cloud providers |
-| `prowler-pr` | Pull request conventions |
-| `prowler-docs` | Documentation style guide |
-| `prowler-attack-paths-query` | Create Attack Paths openCypher queries |
-
 ### Meta Skills
 
 | Skill | Description |
@@ -143,4 +123,3 @@ Read skills/skill-creator/SKILL.md
 - [Agent Skills Standard](https://agentskills.io) - Open standard specification
 - [Agent Skills GitHub](https://github.com/anthropics/skills) - Example skills
 - [Claude Code Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) - Skill authoring guide
-- [Prowler AGENTS.md](../AGENTS.md) - AI agent general rules
