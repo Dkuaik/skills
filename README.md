@@ -58,6 +58,7 @@ Reusable patterns for common technologies:
 | `zod-4` | Zod 4 API patterns |
 | `zustand-5` | Persist, selectors, slices |
 | `ai-sdk-5` | Vercel AI SDK patterns |
+| `conventional-commits` | Conventional Commits standard with types, scopes, breaking changes |
 
 ### Prowler-Specific Skills
 
